@@ -14,5 +14,9 @@ app.get('/speak', function(req, res) {
 	res.render('speaker.html');
 });
 
+app.get('/auditions', function(req, res) {
+	res.render('auditions.html');
+});
+
 console.log('App listening on port ' + (process.env.PORT || 1997));
 app.listen(process.env.PORT || 1997);
