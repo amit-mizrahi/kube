@@ -14,6 +14,10 @@ app.get('/speak', function(req, res) {
 	res.render('speaker.html');
 });
 
+app.get('/speakers', function(req, res) {
+	res.render('speakers.html');
+});
+
 app.get('/auditions', function(req, res) {
 	res.render('auditions.html');
 });
