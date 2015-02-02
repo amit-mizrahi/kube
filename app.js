@@ -14,12 +14,16 @@ app.get('/speak', function(req, res) {
 	res.render('speaker.html');
 });
 
-app.get('/speakers', function(req, res) {
+app.get('/speakers-announcement', function(req, res) {
 	res.render('speakers.html');
 });
 
 app.get('/auditions', function(req, res) {
 	res.render('auditions.html');
+});
+
+app.get('/speakers', function(req, res) {
+	res.render('meet_the_speakers.html');
 });
 
 console.log('App listening on port ' + (process.env.PORT || 1997));
