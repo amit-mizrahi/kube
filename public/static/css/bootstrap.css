@@ -4385,7 +4385,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #028482;
+  color: #62E4E2;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -6809,4 +6809,13 @@ a.list-group-item-danger.active:focus {
 }
 .popover {
   color: #2c3e50;
+}
+body {
+  font-weight:300;
+}
+b {
+  font-weight:500;
+}
+.light {
+  font-weight:100;
 }
