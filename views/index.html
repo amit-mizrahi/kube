@@ -40,35 +40,32 @@
       -webkit-border-radius:50px;
       background-size:100%;
     }
-    #amit {
+    /*#amit {
       background-image:url("/static/img/amit.jpg");
-    }
+      /*AMITTTT!!!!!
+    }*/
+
     #sophie {
       background-image:url("/static/img/sophie.jpg");
-      background-size:140%;
+      /*background-size:140%;*/
     }
-    #will {
-      background-image:url("/static/img/will.jpg");
+    #omar {
+      background-image:url("/static/img/omar.jpg");
     }
-    #ben {
-      background-image:url("/static/img/ben.jpg");
+    #ana {
+      background-image:url("/static/img/ana.jpg");
     }
-    #drew {
-      background-image:url("/static/img/drew.jpg");
+    #sanya {
+      background-image:url("/static/img/sanya.png");
     }
-    #seraj {
-      background-image:url("/static/img/seraj.jpg");
+    #sky {
+      background-image:url("/static/img/sky.jpg");
     }
     #emma {
       background-image:url("/static/img/emma.jpg");
-      background-size:170%;
+      /*background-size:170%; only use this if you need to zoom in... just resize the original image....*/
     }
-    #matt {
-      background-image:url("/static/img/matt.jpg");
-    }
-    #fee {
-      background-image:url("/static/img/fee.jpg");
-    }
+
     footer {
       margin-left:auto;
       margin-right:auto;
@@ -81,10 +78,24 @@
       font-size:18px;
     }
     .center-video {
-      margin-left:auto;
+      /*margin-left:auto;
       margin-right:auto;
-      width:853px;
+      width:853px;*/
+
+      position:relative;
+	    padding-bottom:56.25%;
+	    height:0;
+	    overflow:hidden;
     }
+
+    .video-container iframe, .video-container object, .video-container embed {
+    	position:absolute;
+    	top:0;
+    	left:0;
+    	width:100%;
+    	height:100%;
+    }
+
     .light {
       font-weight:100;
     }
@@ -142,8 +153,8 @@
           <div class="col-lg-8">
             <h1 class="light">Think in all dimensions.</h1>
             <p class="lead">KUBE is IA's student-led conference.</p>
-            <p class="lead">February 4, 2016 &middot; 1:35 - 2:35 PM &middot; IA Okma Campus</p>
-            <p class="lead"><a class="btn btn-primary" href="http://bit.ly/1TtdWgt">Apply now</a> <a class="btn btn-primary" href="#about">Learn more</a></p>
+            <p class="lead">February 3, 2017 &middot; 1:35 - 2:35 PM &middot; IA Okma Campus ISC</p>
+            <!-- <p class="lead"><a class="btn btn-primary" href="http://bit.ly/1TtdWgt">Apply now</a> <a class="btn btn-primary" href="#about">Learn more</a></p> -->
             <p class="lead"><div class="fb-like" data-href="https://facebook.com/kubetalks" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></p>
           </div>
           <div class="col-lg-4">
@@ -153,10 +164,10 @@
       </div>
     </div>
 
-    <div class="spacer">
+    <!-- <div class="spacer">
       <a name="about"></a>
       <p>&nbsp;</p>
-    </div>
+    </div> -->
 
         <div class="row">
           <div class="col-lg-12">
@@ -165,11 +176,11 @@
                 <h3>About</h3>
                 <p>KUBE stands for <b><i>Knowledge, Understanding, Belief and Experience</i></b>. We believe that International Academy students should have a platform on which they can speak openly about their passions.</p>
                 <p><b>What is KUBE?</b></p>
-                <p>KUBE is a conference put on by students, for students. It consists of seven 7-minute talks about various topics. The conference was co-founded by two IA seniors in 2014 and the first conference was held in early 2015.</p>
+                <p>KUBE is a conference put on by students, for students. It consists of six 7-minute talks about various topics. The conference was co-founded by two IA seniors in 2014 and the first conference was held in early 2015.</p>
                 <p><b>Where/when will the event take place?</b></p>
-                <p>The event will be an all-school assembly, held on Thursday, February 4, 2016 from 1:35 - 2:35 PM at the International Academy (Okma Campus).</p>
-                <p><b>Where can I find pictures and videos of previous KUBE events?</b></p>
-                <p>You can find photos of the 2015 event on our <a href="http://www.facebook.com/kubetalks">Facebook page</a> and videos on our <a href="http://www.youtube.com/kubetalks">YouTube channel.</a></p>
+                <p>The event will be an all-school assembly, held on Thursday, February 3, 2017 from 1:35 - 2:35 PM at the International Academy ISC (Okma Campus).</p>
+                <!-- <p><b>Where can I find pictures and videos of previous KUBE events?</b></p>
+                <p>You can find photos of the 2015 event on our <a href="http://www.facebook.com/kubetalks">Facebook page</a> and videos on our <a href="http://www.youtube.com/kubetalks">YouTube channel.</a></p> -->
               </div>
             </div>
           </div>
@@ -179,9 +190,11 @@
           <div class="col-lg-12">
             <div class="panel panel-default">
               <div class="panel-heading">
+
                 <div class="center-video">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/chMIPGxSkv4" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="100%" height="480" src="https://www.youtube.com/embed/chMIPGxSkv4" frameborder="0" allowfullscreen></iframe>
                 </div>
+
               </div>
             </div>
           </div>
@@ -193,31 +206,31 @@
           <div class="col-lg-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-               
+
                 <h3>The Team</h3>
-                <div class="col-lg-4">
-                  <div class="team-pic" id="seraj"></div>
-                  <p><b>Seraj Desai '16</b></p>
-                </div>
-                <div class="col-lg-4">
-                  <div class="team-pic" id="emma"></div>
-                  <p><b>Emma Iizuka '17</b></p>
-                </div>
-              <div class="col-lg-4">
-                  <div class="team-pic" id="matt"></div>
-                  <p><b>Matthew Schultz '16</b></p>
-                </div>
-                <div class="col-lg-4">
-                  <div class="team-pic" id="fee"></div>
-                  <p><b>Fee Christoph '16</b></p>
-                </div>
                 <div class="col-lg-4">
                   <div class="team-pic" id="sophie"></div>
                   <p><b>Sophie Arzumanov '17</b></p>
                 </div>
                 <div class="col-lg-4">
-                  <div class="team-pic" id="nil"></div>
-                  <p><b>Sky Christoph '18</b></p>
+                  <div class="team-pic" id="omar"></div>
+                  <p><b>Omar Al-Ejel '17</b></p>
+                </div>
+              <div class="col-lg-4">
+                  <div class="team-pic" id="emma"></div>
+                  <p><b>Emma Iizuka '16</b></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="team-pic" id="sky"></div>
+                  <p><b>Sky Christoff '16</b></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="team-pic" id="ana"></div>
+                  <p><b>Ana Sahu '16</b></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="team-pic" id="sanya"></div>
+                  <p><b>Sanya Verma '16</b></p>
                 </div>
               </div>
               </div>
@@ -226,7 +239,7 @@
           </div>
         </div>
       </div>
-      
+
       <a name="contact"></a>
 
       <div class="row">
@@ -234,7 +247,7 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3>Contact Us</h3>
-                <p>For inquiries, please contact Matthew Schultz <a href="mailto: schultz.matthew48@bloomfield.org">(schultz.matthew48@bloomfield.org)</a>. Additionally, feel free to contact Mr. Smith or Mrs. Merchant.</p>
+                <p>For inquiries, please contact Sophie Arzumanov <a href="mailto: schultz.matthew48@bloomfield.org">(sopharzumanov@gmail.com)</a>. Additionally, feel free to contact Mr. Smith.</p>
               </div>
             </div>
           </div>
@@ -260,6 +273,6 @@
 </script>
 
 
-  
+
 
 </body></html>
